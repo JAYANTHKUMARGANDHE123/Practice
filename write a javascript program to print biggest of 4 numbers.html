@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>Using nested if-else</p>
+    <script>
+        var a =parseInt(prompt("Enter a number"));// 100
+        var b =parseInt(prompt("Enter a number"));// 143
+        var c =parseInt(prompt("Enter a number"));// 420
+        var d =parseInt(prompt("Enter a number"));// 90
+        if(a>b){ // 100>143
+            if(a>c){
+                if(a>d){
+                    document.write(a+" is biggest")
+                }
+                else{
+                    document.write(d+" is biggest")
+                }
+            }
+            else{
+                document.write(c+" is biggest")
+            }
+        }
+        else{
+           if(b>c){ //143>420
+            if(b>d){
+                document.write(b+" is biggest")
+            }
+            else{
+                document.write(d+" is biggest")
+            }
+           }
+           else{
+            document.write(c+" is biggest")
+           }
+        }
+    </script> -->
+    <!-- <p>Using conditional operator with variable</p>
+    <script>
+       var a=parseInt(prompt("Enter a number 'A' "));// 5
+       var b=parseInt(prompt("Enter a number 'B' "));// 4
+       var c=parseInt(prompt("Enter a number 'C' "));// 7
+       var d=parseInt(prompt("Enter a number 'D' "));// 6
+      res1=a>b?a:b; // 5
+      res2=res1>c?res1:c;// 7
+      res3=res2>d?res2:d;// 7
+      document.write(res3)// 7
+    </script> -->
+    <!-- <p>Using conditional operator without any variable.</p>
+    <script>
+       var a=parseInt(prompt("Enter a number 'A' "));
+       var b=parseInt(prompt("Enter a number 'B' "));
+       var c=parseInt(prompt("Enter a number 'C' "));
+       var d=parseInt(prompt("Enter a number 'D' "));
+        res= a>b&&a>c&&a>d?a:(b>c&&b>d)?b:(c>d)?c:d;
+        document.write(res);
+    </script> -->
+
+    <p>Using function</p>
+    <script>
+        function B4(a,b,c,d){
+            res= a>b&&a>c&&a>d?a:(b>c&&b>d)?b:(c>d)?c:d;
+        document.write(res);   
+        }
+
+        B4(5,6,7,8);
+    </script>
+</body>
+</html>

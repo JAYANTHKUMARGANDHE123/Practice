@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> write a javascript program to print following pattern <br>
+     1 2 3 4 <br>
+     5 6 7 8 <br>
+     9 10 11 12<br>
+     13 14 15 16</p>
+   <script>
+    for(i=1;i<=16;i++){ // 1 2 3 4 5 6 7 8 9 ..... 16 17 - terminate the loop
+      document.write(i+" ") // 1 2 3 4 //new - line 5 6 7 8 //new - line 9 10 11 12  //new-line 13 14 15 16
+      if(i%4==0){ // 1 2 3 0 // 1 2 3 0 // 1 2 3 0 // 1 2 3 0
+        document.write("<br>") // line breaks //line breaks // line breaks //line breaks 
+      }
+    }
+   </script>
+   
+   <p>Using 2 for loops</p>
+   <script>
+    k=1;
+    for(i=1;i<=4;i++){
+    for(j=1;j<=4;j++){
+        document.write(k+" ")
+        k++;
+    }
+    document.write("<br>")
+    }
+   </script>
+
+   <p> Using function </p>
+<script>
+    function pattern44(a,b){
+        for(i=a;i<b;i++){
+      document.write(i+" ")
+      if(i%4==0){
+        document.write("<br>")
+      }
+    }
+    }
+
+    pattern44(5,25)
+</script>
+<p>Using while loop</p>
+<script>
+    var i=1;
+    if(i>0){
+    while(i<=16){
+        document.write(i+" ");
+        if(i%4==0){
+            document.write("<br>")
+        }
+        i++;
+    }}
+</script>
+<p>using function of while loop</p>
+<script>
+    function while44(a){
+        var i=1;
+    if(i>0){
+    while(i<=a){
+        document.write(i+" ");
+        if(i%4==0){
+            document.write("<br>")
+        }
+        i++;
+    }}
+    }
+    while44(25)
+</script>
+</body>
+</html>

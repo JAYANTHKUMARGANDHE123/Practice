@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>write a javascript program to print following pattern
+<br><br>
+11<br>
+12 13<br>
+14 15 16<br>
+17 18 19 20
+</p>
+<script>
+  function right(a,b){
+    k=11;
+    for(i=a;i<=b;i++){ 
+        for(j=1;j<=i;j++){
+document.write(k+"  ");
+         k++; 
+         if(i==j){ 
+            document.write("<br>"); 
+         }
+        }
+    }
+  }
+
+  right(1,4) 
+</script>
+</body>
+</html>

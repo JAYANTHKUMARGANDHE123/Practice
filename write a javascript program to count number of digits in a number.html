@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>write a javascript program to count number of digits in a number without using inbuilt function</p>
+<script>
+    count=0;
+    num=prompt("Enter a number"); t=num;
+    while(t!=0){
+        rem=t%10;
+        count++;
+        t=parseInt(t/10);
+    }
+    document.write(count);
+</script>
+<p>write a javascript program to count number of digits in a number using inbuilt functions.</p>
+<script>
+    num=prompt("Enter a number");
+    document.write("count ="+num.length);
+</script>
+<p>write a javascript program to count number of digits in a number with functions</p>
+<script>
+    function count(a){
+      document.write(a.length)
+    }
+
+    count("255")
+</script>
+</body>
+</html>

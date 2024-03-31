@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>write a javascript program to check given number is strong number or not</p>
+    <script>        
+        num=prompt("Enter a number");
+        t=num;c=t.length;sum=0;
+        if(t>0){
+            while(t!=0){
+            rem=t%10;
+           let fact=1;
+            for(i=1;i<=rem;i++){
+                fact=fact*i
+            }
+            sum+=fact;
+            t=parseInt(t/10);
+        }
+        if(sum==num){
+            document.write(num+" is a strong number");
+        }
+        else{
+            document.write(num+" is not a strong number");
+        }
+        }
+        else{
+            document.write("we cannot calulate for "+ num+ " Enter a valid number.")
+        }
+    </script>
+</body>
+</html>

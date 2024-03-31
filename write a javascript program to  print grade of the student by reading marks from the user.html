@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>write a javascript program to  print grade of the student by reading marks from the user</p>
+    <script>
+        marks=parseInt(prompt("enter marks"));// string -> parseInt(string)
+    if(marks>90&&marks<=100){
+        document.write("Congragulations you are Outstanding.")
+    }
+    else if(marks>80&&marks<=90){
+       document.write("Congralulations you scored A grade.")
+    }
+    else if(marks>70&&marks<=80){
+       document.write("Congralulations you scored B grade.")
+    }
+    else if(marks>60&&marks<=70){
+       document.write("Congralulations you scored C grade.")
+    }
+    else if(marks>50&&marks<=60){
+       document.write("You are passed.")
+    }
+    else if(marks>=0&&marks<=50){
+       document.write("Improve yourself,You are FAIL.")
+    }
+    else{
+        document.write("Invalid marks,Enter valid marks.")
+    }
+    </script>
+</body>
+</html>

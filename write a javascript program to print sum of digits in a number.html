@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        num=parseInt(prompt("Enter a number")); // 8247796557
+        sum=0;
+        while(num!=0){ // 8247796557 824779655 82477965 8247796 824779
+            rem=num%10;//7 5 5 6 9 
+            sum+=rem;//7  12 17 23 32
+            num=parseInt(num/10);//824779655 82477965 8247796 824779
+        }
+        document.write(sum);
+    </script> -->
+    <script>
+        function sumOfDigitsInNumber(){
+            num=parseInt(prompt("Enter a number")); // 8247796557
+        sum=0;
+        while(num!=0){ // 8247796557 824779655 82477965 8247796 824779
+            rem=num%10;//7 5 5 6 9 
+            sum+=rem;//7  12 17 23 32
+            num=parseInt(num/10);//824779655 82477965 8247796 824779
+        }
+        document.write(sum);
+        }
+
+        sumOfDigitsInNumber();
+    </script>
+</body>
+</html>
